@@ -2,6 +2,7 @@
 这是一个基于MJRefresh库的二次封装类,使用起来更加方便简洁,具体的使用方法请见demo.
 
 //使用方法
+
 第一步
 首先,我们的YMRefresh是基于MJRefresh的二次封装,当然,第一步是引入MJRefresh三方库,这里不再赘述.
 
@@ -10,6 +11,7 @@
 
 第三步
 调用
+
 //正常情况下的调用例子
 ```
 //eg:1
@@ -46,6 +48,7 @@ weakSelf.tableView.mj_footer = nil;
 }
 }];
 ```
+
 //gif情况下的调用
 ```
 //eg.1
@@ -64,6 +67,7 @@ if ([weakSelf.tableView.mj_footer isRefreshing]) {
 [weakSelf.tableView.mj_footer endRefreshing];
 }
 }];
+```
 ```
 //eg.3
 [_ymRefresh gifModelRefresh:_tableView refreshType:RefreshTypeDouble firstRefresh:NO timeLabHidden:YES stateLabHidden:NO dropDownBlock:^{
