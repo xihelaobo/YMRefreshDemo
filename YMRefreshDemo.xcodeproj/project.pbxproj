@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000207865AF99CB1E2A5F49B /* libPods-YMRefreshDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 890EDABDEEA7C77CC2FB9A4E /* libPods-YMRefreshDemo.a */; };
+		EC3EEE531E84EB93003CD46C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3EEE521E84EB93003CD46C /* main.m */; };
+		EC3EEE561E84EB93003CD46C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3EEE551E84EB93003CD46C /* AppDelegate.m */; };
+		EC3EEE591E84EB93003CD46C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3EEE581E84EB93003CD46C /* ViewController.m */; };
+		EC3EEE5C1E84EB93003CD46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3EEE5A1E84EB93003CD46C /* Main.storyboard */; };
+		EC3EEE5E1E84EB93003CD46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3EEE5D1E84EB93003CD46C /* Assets.xcassets */; };
+		EC3EEE611E84EB93003CD46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3EEE5F1E84EB93003CD46C /* LaunchScreen.storyboard */; };
+		EC3EEE6C1E84EB93003CD46C /* YMRefreshDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3EEE6B1E84EB93003CD46C /* YMRefreshDemoTests.m */; };
+		EC3EEE771E84EB93003CD46C /* YMRefreshDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3EEE761E84EB93003CD46C /* YMRefreshDemoUITests.m */; };
+		EC3EEE861E84EBDC003CD46C /* YMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3EEE851E84EBDC003CD46C /* YMRefresh.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC3EEE681E84EB93003CD46C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC3EEE461E84EB93003CD46C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC3EEE4D1E84EB93003CD46C;
+			remoteInfo = YMRefreshDemo;
+		};
+		EC3EEE731E84EB93003CD46C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC3EEE461E84EB93003CD46C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC3EEE4D1E84EB93003CD46C;
+			remoteInfo = YMRefreshDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55F027A0BA173C6B250DEF84 /* Pods-YMRefreshDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMRefreshDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YMRefreshDemo/Pods-YMRefreshDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		890EDABDEEA7C77CC2FB9A4E /* libPods-YMRefreshDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YMRefreshDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB1F209188C5D7FAB938EF3 /* Pods-YMRefreshDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMRefreshDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YMRefreshDemo/Pods-YMRefreshDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EC3EEE4E1E84EB93003CD46C /* YMRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3EEE521E84EB93003CD46C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC3EEE541E84EB93003CD46C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC3EEE551E84EB93003CD46C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC3EEE571E84EB93003CD46C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC3EEE581E84EB93003CD46C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC3EEE5B1E84EB93003CD46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC3EEE5D1E84EB93003CD46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC3EEE601E84EB93003CD46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC3EEE621E84EB93003CD46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3EEE671E84EB93003CD46C /* YMRefreshDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMRefreshDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3EEE6B1E84EB93003CD46C /* YMRefreshDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMRefreshDemoTests.m; sourceTree = "<group>"; };
+		EC3EEE6D1E84EB93003CD46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3EEE721E84EB93003CD46C /* YMRefreshDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMRefreshDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3EEE761E84EB93003CD46C /* YMRefreshDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMRefreshDemoUITests.m; sourceTree = "<group>"; };
+		EC3EEE781E84EB93003CD46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3EEE841E84EBDC003CD46C /* YMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMRefresh.h; sourceTree = "<group>"; };
+		EC3EEE851E84EBDC003CD46C /* YMRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMRefresh.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC3EEE4B1E84EB93003CD46C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000207865AF99CB1E2A5F49B /* libPods-YMRefreshDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3EEE641E84EB93003CD46C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3EEE6F1E84EB93003CD46C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06CE88FE76EA0F4459EA7DCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55F027A0BA173C6B250DEF84 /* Pods-YMRefreshDemo.debug.xcconfig */,
+				CBB1F209188C5D7FAB938EF3 /* Pods-YMRefreshDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5CF41DDB8FD583AED277AC1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				890EDABDEEA7C77CC2FB9A4E /* libPods-YMRefreshDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC3EEE451E84EB93003CD46C = {
+			isa = PBXGroup;
+			children = (
+				EC3EEE501E84EB93003CD46C /* YMRefreshDemo */,
+				EC3EEE6A1E84EB93003CD46C /* YMRefreshDemoTests */,
+				EC3EEE751E84EB93003CD46C /* YMRefreshDemoUITests */,
+				EC3EEE4F1E84EB93003CD46C /* Products */,
+				06CE88FE76EA0F4459EA7DCF /* Pods */,
+				5CF41DDB8FD583AED277AC1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC3EEE4F1E84EB93003CD46C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC3EEE4E1E84EB93003CD46C /* YMRefreshDemo.app */,
+				EC3EEE671E84EB93003CD46C /* YMRefreshDemoTests.xctest */,
+				EC3EEE721E84EB93003CD46C /* YMRefreshDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC3EEE501E84EB93003CD46C /* YMRefreshDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EC3EEE841E84EBDC003CD46C /* YMRefresh.h */,
+				EC3EEE851E84EBDC003CD46C /* YMRefresh.m */,
+				EC3EEE541E84EB93003CD46C /* AppDelegate.h */,
+				EC3EEE551E84EB93003CD46C /* AppDelegate.m */,
+				EC3EEE571E84EB93003CD46C /* ViewController.h */,
+				EC3EEE581E84EB93003CD46C /* ViewController.m */,
+				EC3EEE5A1E84EB93003CD46C /* Main.storyboard */,
+				EC3EEE5D1E84EB93003CD46C /* Assets.xcassets */,
+				EC3EEE5F1E84EB93003CD46C /* LaunchScreen.storyboard */,
+				EC3EEE621E84EB93003CD46C /* Info.plist */,
+				EC3EEE511E84EB93003CD46C /* Supporting Files */,
+			);
+			path = YMRefreshDemo;
+			sourceTree = "<group>";
+		};
+		EC3EEE511E84EB93003CD46C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC3EEE521E84EB93003CD46C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC3EEE6A1E84EB93003CD46C /* YMRefreshDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC3EEE6B1E84EB93003CD46C /* YMRefreshDemoTests.m */,
+				EC3EEE6D1E84EB93003CD46C /* Info.plist */,
+			);
+			path = YMRefreshDemoTests;
+			sourceTree = "<group>";
+		};
+		EC3EEE751E84EB93003CD46C /* YMRefreshDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC3EEE761E84EB93003CD46C /* YMRefreshDemoUITests.m */,
+				EC3EEE781E84EB93003CD46C /* Info.plist */,
+			);
+			path = YMRefreshDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC3EEE4D1E84EB93003CD46C /* YMRefreshDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3EEE7B1E84EB93003CD46C /* Build configuration list for PBXNativeTarget "YMRefreshDemo" */;
+			buildPhases = (
+				6E05022FAA9B871F85D23A06 /* [CP] Check Pods Manifest.lock */,
+				EC3EEE4A1E84EB93003CD46C /* Sources */,
+				EC3EEE4B1E84EB93003CD46C /* Frameworks */,
+				EC3EEE4C1E84EB93003CD46C /* Resources */,
+				9B241ECC8103610CE6A9DAD2 /* [CP] Embed Pods Frameworks */,
+				9312699A35828DAC9F8E13FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YMRefreshDemo;
+			productName = YMRefreshDemo;
+			productReference = EC3EEE4E1E84EB93003CD46C /* YMRefreshDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC3EEE661E84EB93003CD46C /* YMRefreshDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3EEE7E1E84EB93003CD46C /* Build configuration list for PBXNativeTarget "YMRefreshDemoTests" */;
+			buildPhases = (
+				EC3EEE631E84EB93003CD46C /* Sources */,
+				EC3EEE641E84EB93003CD46C /* Frameworks */,
+				EC3EEE651E84EB93003CD46C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC3EEE691E84EB93003CD46C /* PBXTargetDependency */,
+			);
+			name = YMRefreshDemoTests;
+			productName = YMRefreshDemoTests;
+			productReference = EC3EEE671E84EB93003CD46C /* YMRefreshDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC3EEE711E84EB93003CD46C /* YMRefreshDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3EEE811E84EB93003CD46C /* Build configuration list for PBXNativeTarget "YMRefreshDemoUITests" */;
+			buildPhases = (
+				EC3EEE6E1E84EB93003CD46C /* Sources */,
+				EC3EEE6F1E84EB93003CD46C /* Frameworks */,
+				EC3EEE701E84EB93003CD46C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC3EEE741E84EB93003CD46C /* PBXTargetDependency */,
+			);
+			name = YMRefreshDemoUITests;
+			productName = YMRefreshDemoUITests;
+			productReference = EC3EEE721E84EB93003CD46C /* YMRefreshDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC3EEE461E84EB93003CD46C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = XiHeLaoBo;
+				TargetAttributes = {
+					EC3EEE4D1E84EB93003CD46C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6LRKYFMPF5;
+						ProvisioningStyle = Automatic;
+					};
+					EC3EEE661E84EB93003CD46C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6LRKYFMPF5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC3EEE4D1E84EB93003CD46C;
+					};
+					EC3EEE711E84EB93003CD46C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6LRKYFMPF5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC3EEE4D1E84EB93003CD46C;
+					};
+				};
+			};
+			buildConfigurationList = EC3EEE491E84EB93003CD46C /* Build configuration list for PBXProject "YMRefreshDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC3EEE451E84EB93003CD46C;
+			productRefGroup = EC3EEE4F1E84EB93003CD46C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC3EEE4D1E84EB93003CD46C /* YMRefreshDemo */,
+				EC3EEE661E84EB93003CD46C /* YMRefreshDemoTests */,
+				EC3EEE711E84EB93003CD46C /* YMRefreshDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC3EEE4C1E84EB93003CD46C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3EEE611E84EB93003CD46C /* LaunchScreen.storyboard in Resources */,
+				EC3EEE5E1E84EB93003CD46C /* Assets.xcassets in Resources */,
+				EC3EEE5C1E84EB93003CD46C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3EEE651E84EB93003CD46C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3EEE701E84EB93003CD46C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E05022FAA9B871F85D23A06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9312699A35828DAC9F8E13FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YMRefreshDemo/Pods-YMRefreshDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B241ECC8103610CE6A9DAD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YMRefreshDemo/Pods-YMRefreshDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC3EEE4A1E84EB93003CD46C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3EEE591E84EB93003CD46C /* ViewController.m in Sources */,
+				EC3EEE561E84EB93003CD46C /* AppDelegate.m in Sources */,
+				EC3EEE531E84EB93003CD46C /* main.m in Sources */,
+				EC3EEE861E84EBDC003CD46C /* YMRefresh.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3EEE631E84EB93003CD46C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3EEE6C1E84EB93003CD46C /* YMRefreshDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3EEE6E1E84EB93003CD46C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3EEE771E84EB93003CD46C /* YMRefreshDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC3EEE691E84EB93003CD46C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC3EEE4D1E84EB93003CD46C /* YMRefreshDemo */;
+			targetProxy = EC3EEE681E84EB93003CD46C /* PBXContainerItemProxy */;
+		};
+		EC3EEE741E84EB93003CD46C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC3EEE4D1E84EB93003CD46C /* YMRefreshDemo */;
+			targetProxy = EC3EEE731E84EB93003CD46C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC3EEE5A1E84EB93003CD46C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3EEE5B1E84EB93003CD46C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC3EEE5F1E84EB93003CD46C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3EEE601E84EB93003CD46C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC3EEE791E84EB93003CD46C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC3EEE7A1E84EB93003CD46C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC3EEE7C1E84EB93003CD46C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F027A0BA173C6B250DEF84 /* Pods-YMRefreshDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6LRKYFMPF5;
+				INFOPLIST_FILE = YMRefreshDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiHeLaoBo.YMRefreshDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC3EEE7D1E84EB93003CD46C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB1F209188C5D7FAB938EF3 /* Pods-YMRefreshDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6LRKYFMPF5;
+				INFOPLIST_FILE = YMRefreshDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiHeLaoBo.YMRefreshDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC3EEE7F1E84EB93003CD46C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6LRKYFMPF5;
+				INFOPLIST_FILE = YMRefreshDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiHeLaoBo.YMRefreshDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YMRefreshDemo.app/YMRefreshDemo";
+			};
+			name = Debug;
+		};
+		EC3EEE801E84EB93003CD46C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6LRKYFMPF5;
+				INFOPLIST_FILE = YMRefreshDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiHeLaoBo.YMRefreshDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YMRefreshDemo.app/YMRefreshDemo";
+			};
+			name = Release;
+		};
+		EC3EEE821E84EB93003CD46C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6LRKYFMPF5;
+				INFOPLIST_FILE = YMRefreshDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiHeLaoBo.YMRefreshDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YMRefreshDemo;
+			};
+			name = Debug;
+		};
+		EC3EEE831E84EB93003CD46C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6LRKYFMPF5;
+				INFOPLIST_FILE = YMRefreshDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiHeLaoBo.YMRefreshDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YMRefreshDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC3EEE491E84EB93003CD46C /* Build configuration list for PBXProject "YMRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3EEE791E84EB93003CD46C /* Debug */,
+				EC3EEE7A1E84EB93003CD46C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC3EEE7B1E84EB93003CD46C /* Build configuration list for PBXNativeTarget "YMRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3EEE7C1E84EB93003CD46C /* Debug */,
+				EC3EEE7D1E84EB93003CD46C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC3EEE7E1E84EB93003CD46C /* Build configuration list for PBXNativeTarget "YMRefreshDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3EEE7F1E84EB93003CD46C /* Debug */,
+				EC3EEE801E84EB93003CD46C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC3EEE811E84EB93003CD46C /* Build configuration list for PBXNativeTarget "YMRefreshDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3EEE821E84EB93003CD46C /* Debug */,
+				EC3EEE831E84EB93003CD46C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC3EEE461E84EB93003CD46C /* Project object */;
+}
