@@ -79,7 +79,7 @@
         self.UpDropRefreshBlock = upDropBlock;
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
-        //指定加载更多的文字
+        //指定数据加载完毕的文字
         [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
     }else if (refreshType == RefreshTypeDouble) {
         //上拉和下拉都持支持
@@ -106,7 +106,7 @@
         self.UpDropRefreshBlock = upDropBlock;
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
-        //指定加载更多的文字
+        //指定数据加载完毕的文字
         [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
     }
 }
@@ -136,7 +136,7 @@
         self.UpDropRefreshBlock = upDropBlock;
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
-        //指定加载更多的文字
+        //指定数据加载完毕的文字
         [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
     }else if (refreshType == RefreshTypeDouble) {
         //支持上拉和下拉加载
@@ -155,7 +155,7 @@
         self.UpDropRefreshBlock = upDropBlock;
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
-        //指定加载更多的文字
+        //指定数据加载完毕的文字
         [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
     }
 }
