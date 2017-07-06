@@ -25,6 +25,8 @@
 //上拉时候触发的block
 @property (nonatomic, copy) void(^UpDropRefreshBlock)(void);
 
+@property (nonatomic, strong) UITableView *parameterTableView;
+
 @end
 
 @implementation YMRefresh
@@ -49,6 +51,9 @@
 
 //正常模式下拉上拉刷新(firstRefresh第一次进入的时候是否要刷新,这个值只对下拉刷新有影响)(refreshType设置为只支持上拉或者下拉的时候,将另外一个block置为nil)
 - (void)normalModelRefresh:(UITableView *)tableView refreshType:(RefreshType)refreshType firstRefresh:(BOOL)firstRefresh timeLabHidden:(BOOL)timeLabHidden stateLabHidden:(BOOL)stateLabHidden dropDownBlock:(void(^)(void))dropDownBlock upDropBlock:(void(^)(void))upDropBlock {
+    
+    _parameterTableView = tableView;
+    
     if (refreshType == RefreshTypeDropDown) {
         //只支持下拉
         
@@ -74,6 +79,8 @@
         self.UpDropRefreshBlock = upDropBlock;
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
+        //指定加载更多的文字
+        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
     }else if (refreshType == RefreshTypeDouble) {
         //上拉和下拉都持支持
         
@@ -99,12 +106,17 @@
         self.UpDropRefreshBlock = upDropBlock;
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
+        //指定加载更多的文字
+        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
     }
 }
 
 
 //gifRefresh
 - (void)gifModelRefresh:(UITableView *)tableView refreshType:(RefreshType)refreshType firstRefresh:(BOOL)firstRefresh timeLabHidden:(BOOL)timeLabHidden stateLabHidden:(BOOL)stateLabHidden dropDownBlock:(void(^)(void))dropDownBlock upDropBlock:(void(^)(void))upDropBlock {
+    
+    _parameterTableView = tableView;
+    
     if (refreshType == RefreshTypeDropDown) {
         //只支持下拉
         self.DropDownRefreshBlock = dropDownBlock;
@@ -124,6 +136,8 @@
         self.UpDropRefreshBlock = upDropBlock;
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
+        //指定加载更多的文字
+        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
     }else if (refreshType == RefreshTypeDouble) {
         //支持上拉和下拉加载
         self.DropDownRefreshBlock = dropDownBlock;
@@ -141,6 +155,8 @@
         self.UpDropRefreshBlock = upDropBlock;
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
+        //指定加载更多的文字
+        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
     }
 }
 
@@ -148,6 +164,7 @@
 - (void)dropDownBlockAction {
     if (_DropDownRefreshBlock) {
         _DropDownRefreshBlock();
+        [_parameterTableView.mj_footer resetNoMoreData];
     }
 }
 
@@ -157,7 +174,5 @@
         _UpDropRefreshBlock();
     }
 }
-
-
 
 @end

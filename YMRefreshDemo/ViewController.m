@@ -99,10 +99,11 @@
         }
     } upDropBlock:^{
         if ([weakSelf.tableView.mj_footer isRefreshing]) {
-            [weakSelf.tableView.mj_footer endRefreshing];
+            
+            [weakSelf.tableView.mj_footer endRefreshingWithNoMoreData];
+            //[_ymRefresh alreadyArriveBottom:weakSelf.tableView];
         }
     }];
-    
 }
 
 #pragma UITableViewDataSource

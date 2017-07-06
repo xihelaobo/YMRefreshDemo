@@ -32,4 +32,5 @@ typedef NS_ENUM(NSInteger, RefreshType) {
 //后期如果有需要还要对diy的模式进行封装
 
 
+
 @end
