@@ -99,9 +99,7 @@
         }
     } upDropBlock:^{
         if ([weakSelf.tableView.mj_footer isRefreshing]) {
-            
             [weakSelf.tableView.mj_footer endRefreshingWithNoMoreData];
-            //[_ymRefresh alreadyArriveBottom:weakSelf.tableView];
         }
     }];
 }
